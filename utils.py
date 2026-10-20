@@ -23,11 +23,7 @@
 from __future__ import generators
 import operator, math, random, copy, sys, os.path, bisect, re
 
-assert (2,5) <= sys.version_info < (3,8), """\
-This code is meant for Python 2.5 through 2.7.
-You might find that the parts you care about still work in older
-Pythons or happen to work in newer ones, but you're on your own --
-edit utils.py if you want to try it."""
+assert sys.version_info >= (3, 0), "This project requires Python 3."
 
 #______________________________________________________________________________
 # Compatibility with Python 2.2, 2.3, and 2.4
